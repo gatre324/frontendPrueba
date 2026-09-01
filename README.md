@@ -4,7 +4,7 @@ Angular 22 standalone application for CU-01 registration, CU-02 login and CU-04 
 
 ## Requirements
 
-Node 22.22.3+ is required by Angular 22. The project is configured with Angular 22.0.0.
+Node 22.22.3+ is required by Angular 22. The project uses Angular 22.1.x.
 
 ## Run
 
@@ -13,7 +13,7 @@ npm install
 npm start
 ```
 
-Development API: `http://localhost:8000/api/v1`. Production URL is configured in `src/app/core/config/environment.production.ts`.
+Development API: `http://localhost:8000/api/v1`. Production builds read `API_URL` at build time. See `VERCEL_DEPLOY.md` for Vercel deployment instructions.
 
 ## Tests and build
 
