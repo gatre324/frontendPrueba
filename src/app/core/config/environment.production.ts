@@ -1,1 +1,4 @@
-export const environment = { production: true, apiUrl: 'https://api.DOMINIO.com/api/v1' };
+export const environment = {
+  "production": true,
+  "apiUrl": "https://backendprueba-production-379f.up.railway.app/api/v1"
+};
