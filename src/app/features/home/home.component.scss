@@ -1,0 +1,6 @@
+.home-page { min-height: 100vh; padding: 2rem max(2rem, 8vw); background: #f4f7f5; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.eyebrow { color: #24734a; font-weight: 700; }
+button { padding: .7rem 1rem; border: 1px solid #24734a; border-radius: .5rem; background: white; color: #24734a; font: inherit; font-weight: 700; cursor: pointer; }
+.welcome-card { margin-top: 3rem; padding: 2rem; background: white; border: 1px solid #dfe8e2; border-radius: 1rem; max-width: 38rem; }
+.muted { color: #5e6c63; }

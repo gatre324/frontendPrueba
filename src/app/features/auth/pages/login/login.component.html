@@ -1,0 +1,16 @@
+<main class="auth-page">
+  <section class="auth-card">
+    <p class="eyebrow">SI2 Nutricionista</p>
+    <h1>Iniciar sesión</h1>
+    <p class="muted">Accede a tu espacio de seguimiento nutricional.</p>
+    @if (error) { <p class="error" role="alert">{{ error }}</p> }
+    <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+      <label>Correo electrónico <input type="email" formControlName="email" autocomplete="email" /></label>
+      @if (form.controls.email.touched && form.controls.email.invalid) { <small>Ingresa un correo válido.</small> }
+      <label>Contraseña <input type="password" formControlName="password" autocomplete="current-password" /></label>
+      @if (form.controls.password.touched && form.controls.password.invalid) { <small>La contraseña es obligatoria.</small> }
+      <button type="submit" [disabled]="loading">{{ loading ? 'Ingresando…' : 'Ingresar' }}</button>
+    </form>
+    <p class="muted">¿No tienes cuenta? <a routerLink="/register">Regístrate</a></p>
+  </section>
+</main>

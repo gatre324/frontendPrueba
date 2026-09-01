@@ -1,0 +1,6 @@
+<main class="home-page">
+  <header><div><p class="eyebrow">SI2 Nutricionista</p><h1>Bienvenido/a</h1></div><button type="button" (click)="logout()" [disabled]="loading">Cerrar sesión</button></header>
+  @if (auth.session(); as user) {
+    <section class="welcome-card"><h2>{{ user.first_name }} {{ user.last_name }}</h2><p>{{ user.email }}</p><p>Tipo de usuario: <strong>{{ user.user_type }}</strong></p><p class="muted">Este espacio protegido será la base de las próximas funcionalidades.</p></section>
+  }
+</main>
